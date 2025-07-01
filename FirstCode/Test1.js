@@ -34,13 +34,14 @@ console.log("Switch");
             break;
     }
 }
+// zwei Namespaces in einer Datei sind nicht erlaubt
 var story;
 (function (story) {
     console.log(parent);
     console.log(parent.gameState);
     if (parent.gameState == true) {
         console.log("you cant get in again");
-        location.href = "owo.html";
+        location.href = "FirstCode/owo.html";
     }
     parent.gameState = true;
     console.log(parent.gameState);

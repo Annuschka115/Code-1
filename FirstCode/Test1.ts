@@ -32,7 +32,7 @@ console.log("hug")
 break;
 }
 }
-
+// zwei Namespaces in einer Datei sind nicht erlaubt
 namespace story {
     type Parent = Window & {gameState: boolean};
     declare let parent: Parent;
@@ -41,7 +41,7 @@ namespace story {
     console.log(parent.gameState);
     if (parent.gameState == true){
         console.log("you cant get in again");
-        location.href = "owo.html";
+        location.href = "FirstCode/owo.html";
     
     }
     parent.gameState = true;
