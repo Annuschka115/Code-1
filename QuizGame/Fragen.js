@@ -8,10 +8,11 @@ var cool;
     // 2.Multiple Choice: Mehrere Antworten möglich
     // 3.Open Ended: Freitextantwort
     // 4.Range: Schätzfrage mit puffer oder korrektem Bereich
-    const Fragen = {
-        yesNO: {
-            question: "Ist das eine Test?",
-            answer: "ja"
-        }
-    };
+    cool.fragen = [
+        { frage: "wer?", antwort: "ich"
+        },
+        { frage: "huh?", antworten: ["ja", "nein"]
+        },
+    ];
 })(cool || (cool = {}));
+//# sourceMappingURL=Fragen.js.map

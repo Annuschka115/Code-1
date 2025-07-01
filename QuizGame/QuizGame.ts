@@ -1,6 +1,22 @@
 namespace cool {
-    //hier kommt der Code für die logik des Spiels rein
-    console.log("Spiel startet")
+    console.log(fragen)
+   let antwort0 =prompt(fragen[0].frage) 
+   //hier kommt der Code für die logik des Spiels rein
+    console.log(antwort0)
+    if(antwort0=== fragen[0].antwort){
+        console.log("ja")
+    }
+    else{
+        alert("Nein")
+    }
+    let antwort1 =prompt(fragen[1].frage) 
+    console.log(antwort1 )
+    const istantwort1richtig=fragen[1].antworten?.map((x)=>{
+return x===antwort1
+    }).includes(true)
+    if (istantwort1richtig){
+        alert("true")
+    }
     // Logik des Spiels:
     // 1.Spiel starten mit einem Button
     // 2.Logik der Fragetypen
