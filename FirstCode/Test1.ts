@@ -47,3 +47,40 @@ namespace story {
     parent.gameState = true;
     console.log(parent.gameState);
 }
+//(Testing from the Booklet "pre test")
+// let i: number = 1;
+// while (i<20) {
+//     console.log(i);
+//     i++;
+// }
+
+//(Testing from the Booklet "post test")
+// let i: number= 0;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i<20);
+
+//(Testing from the Booklet "complex control")
+// let a: number= 10;
+// let b: number= 5;
+// for (let i : number = b; i > 1; i/=2) {
+//  if (i == 3)
+//     continue;
+//  if (i == a)
+//     break;
+// console.log(i) ;
+
+// }
+
+//Testing from the Booklet "All key or indices"
+// let o = {x: 1, y: 2};
+// for (let key in o){
+//     console.log(o[key]);
+// }
+
+//Testing from the Booklet "All values"
+// let o = [1, 2, 3, 4];
+// for (let value of o) {
+//     console.log(o) ;
+// }
