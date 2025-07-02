@@ -77,4 +77,3 @@ for (let i:number = 0; i = owo.length; i++) {
 
     }
 }*/
-//# sourceMappingURL=QuizGame.js.map

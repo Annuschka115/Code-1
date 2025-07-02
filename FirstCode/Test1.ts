@@ -47,6 +47,36 @@ namespace story {
     parent.gameState = true;
     console.log(parent.gameState);
 }
+console.log("Test alles hier drunter ist ein Test"); 
+
+console.log(2+3);
+
+let myName = "Dummbeutel";                              //variable myName vom Typ string
+console.log(myName); 
+
+let person = { name: "Anne", alter: 23 , hobby: "schlafen"};
+console.log(person);
+
+let x = 10;
+let y = [1, 2, 3, 4, 5];
+let z = (x + y[1])
+console.log("x ist:", x, "und y ist:", y, "und z ist", z);
+
+let personen = [
+  { name: "Anna", alter: 30 },
+  { name: "Ben", alter: 25 },
+  { name: "Clara", alter: 35 }
+];
+console.table(personen);
+
+console.log("%cAchtung!", "color: red; font-weight: bold; font-size: 16px");
+
+console.group("Benutzerdaten");
+console.log("Name: Lisa");
+console.log("Alter: 28");
+console.groupEnd();
+
+
 //(Testing from the Booklet "pre test")
 // let i: number = 1;
 // while (i<20) {

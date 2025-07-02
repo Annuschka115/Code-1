@@ -23,4 +23,3 @@ var cool;
         },
     ];
 })(cool || (cool = {}));
-//# sourceMappingURL=Fragen.js.map
