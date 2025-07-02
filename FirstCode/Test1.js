@@ -67,6 +67,12 @@ console.group("Benutzerdaten");
 console.log("Name: Lisa");
 console.log("Alter: 28");
 console.groupEnd();
+console.time("Rechenzeit");
+let summe = 0;
+for (let i = 0; i < 1000000; i++) {
+    summe += i;
+}
+console.timeEnd("Rechenzeit");
 //(Testing from the Booklet "pre test")
 // let i: number = 1;
 // while (i<20) {
