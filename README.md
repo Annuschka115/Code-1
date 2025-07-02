@@ -3,7 +3,7 @@ Spinning cat yay
 
 [Head Empty Page](https://Annuschka115.github.io/Code-1/FirstCode/owo.html)
 
-[Julie Story Adventure ](https://Annuschka115.github.io/COde-1/Julie-Story/Storyadventure.html)
+[Julie Story Adventure (not working tho) ](https://Annuschka115.github.io/COde-1/Julie-Story/Storyadventure.html)
 
 [Nim Game](https://Annuschka115.github.io/Code-1/NIM/NIM.html)
 
