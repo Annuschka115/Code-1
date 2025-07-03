@@ -2,7 +2,6 @@
 var cool;
 (function (cool) {
     //Hier kommen die Fragen rein
-    console.log("Fragen geladen");
     // Fragentypen:
     //  1.Single Choice: Ja oder Nein Antwort
     // 2.Multiple Choice: Mehrere Antworten möglich

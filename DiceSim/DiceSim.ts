@@ -5,3 +5,26 @@
 4. Create Output in Console of results (sum, average sum, median and min/max sum)
 */
 
+namespace DiceSim {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

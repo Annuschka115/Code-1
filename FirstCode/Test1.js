@@ -1,78 +1,80 @@
 "use strict";
-var Test;
-(function (Test) {
-    console.log("aaaaaa");
-    let x = 1;
-    {
-        // let x:number =0;
-        console.log(x);
-    }
-    console.log(x);
-    // console.log(x) geht nicht weil nicht in Block
-    // In einer Zeile ALT + Pfeiltasten um Zeilen/Auswahl zu verschieben
-})(Test || (Test = {}));
-let v = 1;
-if (v == 1) {
-    console.log("Hello");
+let x = 7;
+if (x < 7) {
+    console.log("Hello world");
 }
-else {
-    console.log("goodbye");
-}
-// 1x "=" ist Deklarierung (Define or Zuweisungoperator/ !assignment operator!), 2x "=" ist Abfrage
-console.log("Switch");
-{
-    let b = 3;
-    switch (b) {
-        case 1:
-            console.log("hello");
-            break;
-        case 2:
-            console.log("goodbye");
-            break;
-        default:
-            console.log("hug");
-            break;
-    }
-}
-// zwei Namespaces in einer Datei sind nicht erlaubt
-var story;
-(function (story) {
-    console.log(parent);
-    console.log(parent.gameState);
-    if (parent.gameState == true) {
-        console.log("you cant get in again");
-        location.href = "FirstCode/owo.html";
-    }
-    parent.gameState = true;
-    console.log(parent.gameState);
-})(story || (story = {}));
-console.log("Test alles hier drunter ist ein Test");
-console.log(2 + 3);
-let myName = "Dummbeutel"; //variable myName vom Typ string
-console.log(myName);
-let person = { name: "Anne", alter: 23, hobby: "schlafen" };
-console.log(person);
-let x = 10;
-let y = [1, 2, 3, 4, 5];
-let z = (x + y[1]);
-console.log("x ist:", x, "und y ist:", y, "und z ist", z);
-let personen = [
-    { name: "Anna", alter: 30 },
-    { name: "Ben", alter: 25 },
-    { name: "Clara", alter: 35 }
-];
-console.table(personen);
-console.log("%cAchtung!", "color: red; font-weight: bold; font-size: 16px");
-console.group("Benutzerdaten");
-console.log("Name: Lisa");
-console.log("Alter: 28");
-console.groupEnd();
-console.time("Rechenzeit");
-let summe = 0;
-for (let i = 0; i < 1000000; i++) {
-    summe += i;
-}
-console.timeEnd("Rechenzeit");
+// namespace Test {
+// console.log("aaaaaa");
+// let x:number =1;
+// {
+//    // let x:number =0;
+//     console.log(x)
+// }
+// console.log(x)
+// // console.log(x) geht nicht weil nicht in Block
+// // In einer Zeile ALT + Pfeiltasten um Zeilen/Auswahl zu verschieben
+// }
+// let v:number =1;
+// if (v ==1){
+//     console.log("Hello")}
+// else{
+//  console.log("goodbye")}
+// // 1x "=" ist Deklarierung (Define or Zuweisungoperator/ !assignment operator!), 2x "=" ist Abfrage
+// console.log("Switch")
+// {
+// let b:number=3;
+// switch (b) {
+//     case 1:
+// console.log("hello")
+// break;
+//     case 2:
+// console.log("goodbye")
+// break;
+//     default:
+// console.log("hug")
+// break;
+// }
+// }
+// // zwei Namespaces in einer Datei sind nicht erlaubt
+// namespace story {
+//     type Parent = Window & {gameState: boolean};
+//     declare let parent: Parent;
+//     console.log(parent);
+//     console.log(parent.gameState);
+//     if (parent.gameState == true){
+//         console.log("you cant get in again");
+//         location.href = "FirstCode/owo.html";
+//     }
+//     parent.gameState = true;
+//     console.log(parent.gameState);
+// }
+// console.log("Test alles hier drunter ist ein Test"); 
+// console.log(2+3);
+// let myName = "Dummbeutel";                              //variable myName vom Typ string
+// console.log(myName); 
+// let person = { name: "Anne", alter: 23 , hobby: "schlafen"};
+// console.log(person);
+// let x = 10;
+// let y = [1, 2, 3, 4, 5];
+// let z = (x + y[1])
+// console.log("x ist:", x, "und y ist:", y, "und z ist", z);
+// let personen = [
+//   { name: "Anna", alter: 30 },
+//   { name: "Ben", alter: 25 },
+//   { name: "Clara", alter: 35 }
+// ];
+// console.table(personen);
+// console.log("%cAchtung!", "color: red; font-weight: bold; font-size: 16px");
+// console.group("Benutzerdaten");
+// console.log("Name: Lisa");
+// console.log("Alter: 28");
+// console.groupEnd();
+// console.time("Rechenzeit");
+// let summe = 0;
+// for (let i = 0; i < 1_000_000; i++) {
+//   summe += i;
+// }
+// console.timeEnd("Rechenzeit");
 //(Testing from the Booklet "pre test")
 // let i: number = 1;
 // while (i<20) {
