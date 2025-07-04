@@ -1,7 +1,40 @@
-let x: number = 7;
-    if (!(x > 7)) {
-        console.log("Hello world")      //ich glaub mein Hirn ist schrott
-    }
+let person = prompt("Wessen Patronus willst du wissen? (Harry, Hermine, Ron)");
+if (person) { 
+person= person.trim().toLowerCase();
+}
+let patronus;
+
+switch (person) {
+  case "harry":
+    patronus = "Deer";
+    break;
+  case "hermine":
+    patronus = "Otter";
+    break;
+  case "ron":
+    patronus = "Rat";
+    break;
+  default:
+    patronus = "not found, ungültige Eingabe";
+    break;
+}
+
+alert(patronus); 
+
+
+// let x: number= -1;
+// if (x > 10) {
+//   console.log("false");
+// }
+// else {
+//   console.log("true");
+// console.log("cheeseburger");
+// }
+
+// let x: number = 0;
+//     if (!(x > 1)) {
+//         console.log("Hello world");    
+//     }
 // namespace Test {
 // console.log("aaaaaa");
 // let x:number =1;
