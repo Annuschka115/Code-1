@@ -1,25 +1,33 @@
-let person = prompt("Wessen Patronus willst du wissen? (Harry, Hermine, Ron)");
-if (person) { 
-person= person.trim().toLowerCase();
-}
-let patronus;
-
-switch (person) {
-  case "harry":
-    patronus = "Deer";
-    break;
-  case "hermine":
-    patronus = "Otter";
-    break;
-  case "ron":
-    patronus = "Rat";
-    break;
-  default:
-    patronus = "not found, ungültige Eingabe";
-    break;
+let i: number = 0;
+while (i<15) {
+  console.log(i);
+  i ++;
 }
 
-alert(patronus); 
+
+
+// let person = prompt("Wessen Patronus willst du wissen? (Harry, Hermine, Ron)");
+// if (person) { 
+// person= person.trim().toLowerCase();
+// }
+// let patronus;
+
+// switch (person) {
+//   case "harry":
+//     patronus = "Deer";
+//     break;
+//   case "hermine":
+//     patronus = "Otter";
+//     break;
+//   case "ron":
+//     patronus = "Rat";
+//     break;
+//   default:
+//     patronus = "not found, ungültige Eingabe";
+//     break;
+// }
+
+// alert(patronus); 
 
 
 // let x: number= -1;
