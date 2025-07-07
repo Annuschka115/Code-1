@@ -1,8 +1,19 @@
-let i: number = 0;
-while (i<15) {
-  console.log(i);
-  i ++;
+for (let i: number = 80; i > 1; i /= 2) {
+    if (i == 3)
+        continue;
+    if (i == 22)
+        break;
+    console.log(i);
 }
+
+
+
+
+// let i: number = 0;
+// while (i<15) {
+//   console.log(i);
+//   i ++;
+// }
 
 
 

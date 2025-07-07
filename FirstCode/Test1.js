@@ -1,9 +1,16 @@
 "use strict";
-let i = 0;
-while (i < 15) {
+for (let i = 80; i > 1; i /= 2) {
+    if (i == 3)
+        continue;
+    if (i == 22)
+        break;
     console.log(i);
-    i++;
 }
+// let i: number = 0;
+// while (i<15) {
+//   console.log(i);
+//   i ++;
+// }
 // let person = prompt("Wessen Patronus willst du wissen? (Harry, Hermine, Ron)");
 // if (person) { 
 // person= person.trim().toLowerCase();
