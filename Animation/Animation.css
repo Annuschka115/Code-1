@@ -3,10 +3,16 @@ body {
     padding: 20px;
     background-color: rgb(14, 14, 24);
 }
+@keyframes moveBall {
+    0%   { left: 0; }
+    100% { left: 90vw; }
+}
+
 .ball {
     position: absolute;
     width: 10px;
     height: 10px;
     background-color: rgb(252, 29, 237);
-    border: radius 50%;
+    border-radius: 80%;
+    animation: moveBall 2s linear infinite alternate;
 }
