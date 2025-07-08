@@ -1,0 +1,12 @@
+body {
+    margin:auto;
+    padding: 20px;
+    background-color: rgb(14, 14, 24);
+}
+.ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(252, 29, 237);
+    border: radius 50%;
+}
