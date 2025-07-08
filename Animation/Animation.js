@@ -41,7 +41,7 @@ for (let i = 0; i < NUM_BAllS; i++) {
 }
 function getRandomColor() {
     const hue = Math.floor(Math.random() * 360);
-    return `hsl(${hue}, 100%, 70%)`; // HSL: Farbton, Sättigung, Helligkeit
+    return `hsl(${hue}, 70%, 80%)`; // HSL: Farbton, Sättigung, Helligkeit
 }
 function animate() {
     checkCollisions();
