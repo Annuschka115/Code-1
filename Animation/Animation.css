@@ -3,10 +3,7 @@ body {
     padding: 20px;
     background-color: rgb(14, 14, 24);
 }
-@keyframes moveBall {
-    0%   { left: 0; }
-    100% { left: 90vw; }
-}
+
 
 .ball {
     position: absolute;

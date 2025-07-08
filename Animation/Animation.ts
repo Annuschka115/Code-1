@@ -4,10 +4,11 @@
 //         console.log(a, b);
 // }
 // }
+
 window.addEventListener("load", handleLoad);
 const NUM_BAllS = Number(prompt("How many balls do you want?"))
 const speed = Number(prompt("How fast should the balls be able to move?"))
-const BALL_SIZE = 40
+const BALL_SIZE = 10
 
 
 let timePreviousFrame: number = Date.now();
@@ -22,6 +23,11 @@ type Ball = {
 
 const balls: Ball[] = [];
 
+function handleLoad() {
+    document.body.addEventListener("click", handlerClick)
+    createBall()
+    animate()
+}
 function createBall(): Ball {
     const el = document.createElement("span");
     el.className = "ball";
@@ -42,11 +48,6 @@ function createBall(): Ball {
     //const vy = 10
     
     return { element: el, x, y, vx, vy };
-}
-function handleLoad() {
-    document.body.addEventListener("click", handlerClick)
-    createBall()
-    animate()
 }
 
 for (let i = 0; i < NUM_BAllS; i++) {
@@ -133,7 +134,6 @@ function handlerClick(_event: Event): void {
         }
     }
 }
-
 
 /*Was zu tun ist:
 1.Ball in Css machen

@@ -8,9 +8,14 @@
 window.addEventListener("load", handleLoad);
 const NUM_BAllS = Number(prompt("How many balls do you want?"));
 const speed = Number(prompt("How fast should the balls be able to move?"));
-const BALL_SIZE = 40;
+const BALL_SIZE = 10;
 let timePreviousFrame = Date.now();
 const balls = [];
+function handleLoad() {
+    document.body.addEventListener("click", handlerClick);
+    createBall();
+    animate();
+}
 function createBall() {
     const el = document.createElement("span");
     el.className = "ball";
@@ -31,17 +36,12 @@ function createBall() {
     //const vy = 10
     return { element: el, x, y, vx, vy };
 }
-function handleLoad() {
-    document.body.addEventListener("click", handlerClick);
-    // Erzeuge mehrere Bälle nach dem Laden
-    for (let i = 0; i < NUM_BAllS; i++) {
-        balls.push(createBall());
-    }
-    animate();
+for (let i = 0; i < NUM_BAllS; i++) {
+    balls.push(createBall());
 }
 function getRandomColor() {
     const hue = Math.floor(Math.random() * 360);
-    return `hsl(${hue}, 70%, 80%)`; // HSL: Farbton, Sättigung, Helligkeit
+    return `hsl(${hue}, 100%, 70%)`; // HSL: Farbton, Sättigung, Helligkeit
 }
 function animate() {
     checkCollisions();
