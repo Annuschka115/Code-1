@@ -18,8 +18,8 @@ namespace Tankrace {
     function handleload(): void {
         tank = {
             element: document.createElement("span"),
-            position: { x: 100, y: 100 },
-            velocity: { x: 0, y: 0 },
+            position: { x: 950, y: 460},
+            velocity: { x: 0, y: 0},
             rotation: 0
         }
         document.body.appendChild(tank.element);
@@ -91,7 +91,7 @@ const radians:number = Math.PI*tank.rotation /180;
 
     function move(_timeDelta: number): void {
         // tank.rotation += 1;
-        const matrix: string = createMatrix(tank.position, tank.rotation, { x: 40, y: 20 });
+        const matrix: string = createMatrix(tank.position, tank.rotation, { x: 40, y: 20 }); 
         tank.element.style.transform = matrix;
         tank.position.x += tank.velocity.x * _timeDelta;
         tank.position.y += tank.velocity.y * _timeDelta;

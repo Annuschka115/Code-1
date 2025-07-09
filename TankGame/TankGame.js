@@ -11,7 +11,7 @@ var Tankrace;
     function handleload() {
         tank = {
             element: document.createElement("span"),
-            position: { x: 100, y: 100 },
+            position: { x: 950, y: 460 },
             velocity: { x: 0, y: 0 },
             rotation: 0
         };
