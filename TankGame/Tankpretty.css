@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+
+}
+
+body {
+    background-color: rgb(30, 21, 42);
+
+}
+
+span {
+    background-color: rgb(175, 17, 249);
+    width: 2px;
+    height: 2px;
+    position: fixed;
+
+    transform: matrix(20, 0, 0, 20, 0, 0);
+}
